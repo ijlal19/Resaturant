@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import WebsiteHomePage from "@/website/pagesLayout/websiteHome/webSiteHomeIndex";
 export default function Home() {
   return (
     <div>
@@ -60,6 +60,7 @@ export default function Home() {
           </a>
         </div>
       </main> */}
+      <WebsiteHomePage />
     </div>
   );
 }
