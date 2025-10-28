@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'LatoBold';
+    src: url('/fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main {
+    width: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(128, 127, 127, 0.373);
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 10px 10px 0px 10px !important;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+
+        .header_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0px !important;
+            .logo {
+                width: 150px;
+                height: 40px;
+                // border: 1px solid #b5b5b5;
+            }
+            .nav_options_box{
+                display: flex;
+                box-sizing: border-box;
+                flex-direction: row;
+                column-gap: 20px !important;
+                padding-right: 10px !important;
+                
+                .drop_main{
+                    padding: 7px 5px !important;
+                    box-sizing: border-box;
+                    height: 40px;
+                    border: none;
+                    font-weight: bolder;
+                    color: #2e2e2ee0;
+                    border-radius: 5px;
+                    transition: all .5s ease;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: whitesmoke;
+                    }
+                    
+                    .options{
+
+                    }
+                    @media (max-width:900px) {
+                        display: none;
+                    }
+                }
+                .btn{
+                    width: 35px;
+                    font-family: 'LatoBold';
+                    height: 35px;
+                    border-radius: 50%;
+                    // border: 1px solid #b5b4b4;
+                    color: rgb(128, 128, 128);
+                    transition: all .5s ease;
+                }
+                .btn:nth-child(3){
+                    &:hover{
+                        background-color: whitesmoke;
+                        cursor: pointer;
+                        color: black;
+                    }
+                }
+                .btn:nth-child(4){
+                    background-color: whitesmoke;
+                    border:none;
+                    cursor: not-allowed;
+                    color: rgb(128, 128, 128);
+                    font-size: 16px;
+                    // border: 1px solid #ff0000 !important;
+                }
+            }
+        }
+
+        .header_menu {
+            width: 100%;
+            display: flex;
+            justify-content: left;
+            flex-wrap: nowrap;
+            overflow: scroll;
+            column-gap: 15px;
+            padding: 10px 0px 0px 0px !important;
+            box-sizing: border-box;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+
+            .links{
+                font-size: 14px;
+                color: #696868;
+                text-decoration: none;
+                display: flex;
+                flex-wrap: nowrap !important;
+                white-space-collapse: collapse;
+                padding: 10px 15px !important;
+                box-sizing: border-box;
+                font-family: "LatoBold";
+                transition: all .5s ease;
+                letter-spacing: 1px;
+                border-radius: 5px !important;
+                border-bottom: 2px solid transparent;
+                &:hover{
+                    background-color: whitesmoke;
+                    border-radius: 0px !important;
+                    border-bottom: 2px solid black !important;
+                }
+            }
+            .linkst{
+                font-size: 14px;
+                color: #696868;
+                text-decoration: none;
+                padding: 10px 15px !important;
+                box-sizing: border-box;
+                font-family: "LatoBold";
+                transition: all .5s ease;
+                letter-spacing: 1px;
+                // border-radius: 5px !important;
+                border-bottom: 2px solid transparent;
+                background-color: whitesmoke;
+                border-bottom: 2px solid black !important;
+                border-radius: 0px !important;
+                &:hover{
+                }
+            }
+        }
+    }
+}
