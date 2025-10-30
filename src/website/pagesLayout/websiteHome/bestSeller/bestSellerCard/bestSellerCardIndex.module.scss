@@ -1,0 +1,76 @@
+@import '../../../../../globalConfig.scss';
+
+.best_seller_card_main {
+    flex: 0 0 280px;
+    height: 370px;
+    flex-grow: 1;
+    padding: 10px 5px !important;
+    background-color: $light;
+    box-sizing: border-box;
+
+    .title {
+        font-size: 22px;
+        font-weight: bold;
+        font-family: $font-roboto;
+        padding: 0px 0px 0px 10px  !important;
+        margin: 0px !important;
+    }
+
+    .price_tag_div{
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        padding: 5px 0px 0px 0px !important;
+        box-sizing: border-box;
+
+        .priceTag {
+            background: $main_color;
+            width:90px;
+            color: white;
+            font-weight: bold;
+            margin-left: auto;
+            text-align: right;
+            font-size: 16px;
+            padding: 3px 15px 3px ;
+            display: inline-block;
+            align-items: flex-end;
+            position: relative;
+            font-family: $font-systemUi;
+            border-radius: 2px 0 0 2px;
+            .rs{
+                font-size: 10px;
+                vertical-align: baseline;
+                font-family: sans-serif !important;
+            }
+        }
+    
+        .priceTag::after {
+            content: "";
+            position: absolute;
+            right: 76px;
+            top: -15;
+            width: 0;
+            height: 0;
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+            border-left: 15px solid #ffffff;
+        }
+    }
+
+    .food_image {
+        width: 100%;
+    }
+
+    @media (max-width:500px) {
+    flex: 0 0 230px;
+    height: 320px;
+        
+
+    .title{
+        font-size: 20px;
+    }
+    .food_image{
+        margin-top: 5px !important;
+    }
+    }
+}

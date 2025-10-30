@@ -1,10 +1,11 @@
-import WebsiteDealCard from "@/website/sharedComponent/webDealCard/dealCardIndex";
-import React from "react";
+import WebsiteBestSellerIndex from "./bestSeller/websiteBestSellerIndex";
+import WebsiteTopDeals from "./topDeals/websiteTopDealsIndex";
 
 const WebsiteHomePage = () => {
     return(
         <div>
-            <WebsiteDealCard />
+            <WebsiteBestSellerIndex />
+            <WebsiteTopDeals />
         </div>
     )
 }

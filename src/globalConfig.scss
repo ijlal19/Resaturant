@@ -1,7 +1,9 @@
 $main_color: #ea002a; 
 $main_light_color: #ea002bb9;
-$light: #f2f3f3;
+$light: white;
 $dark: #000000;
+$DarkGrey: #333333;
+$WhiteSmoke: whitesmoke;
 
 @font-face {
   font-family: 'Lato';
@@ -17,5 +19,20 @@ $dark: #000000;
   font-style: normal;
 }
 
-$font-regular: 'Lato', sans-serif;
+@font-face {
+  font-family: 'RobotoCondensed-Medium';
+  src: url('/fonts/RobotoCondensed-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'System-ui';
+  src: url('/fonts/System-ui.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+$font-regular: 'Lato';
 $font-bold: 'LatoBold';
+$font-roboto: 'RobotoCondensed-Medium';
+$font-systemUi: 'System-ui';

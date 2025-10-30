@@ -1,5 +1,5 @@
 import react from 'react';
-import styles from './webdealCardIndex.module.scss';
+import styles from './topDealCardIndex.module.scss';
 
 const WebsiteDealCard = () => {
 
