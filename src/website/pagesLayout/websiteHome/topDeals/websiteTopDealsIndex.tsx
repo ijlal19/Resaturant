@@ -2,6 +2,12 @@ import WebsiteDealCard from './topDealsCard/topDealCardIndex';
 import react from './websiteTopDealsIndex.module.scss';
 import styles from './websiteTopDealsIndex.module.scss';
 
+interface DataType {
+    img: string,
+    title: string,
+    price: string
+}
+
 const WebsiteTopDeals = () => {
     const Data = [
         {
@@ -31,9 +37,9 @@ const WebsiteTopDeals = () => {
                 <p className={styles.heading}><span className={styles.top}>TOP</span> DEALS</p>
                 <div className={styles.card_section}>
                     {
-                        Data.map((item, index) => {
+                        Data.map((item :DataType , index :number) => {
                             return (
-                                <WebsiteDealCard key={index} />
+                                <WebsiteDealCard props={item} key={index} />
                             )
                         })
                     }

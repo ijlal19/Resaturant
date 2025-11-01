@@ -5,6 +5,12 @@ import { Navigation, FreeMode, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import ExploreMenuCard from './explorMenyCard/exploreMenuCard';
+
+interface DataType {
+    title: string,
+    img: string
+}
+
 const WebsiteExploreMenu = () => {
     const Data = [
         {
@@ -76,7 +82,7 @@ const WebsiteExploreMenu = () => {
                         }}
                     >
                         {
-                            Data?.map((item: any, index: any) => {
+                            Data?.map((item: DataType, index: number) => {
                                 return (
                                     <SwiperSlide key={index} className={styles.swiper_slide}>
                                         <ExploreMenuCard props={item} />
@@ -93,7 +99,7 @@ const WebsiteExploreMenu = () => {
                     </div>
                     <div className={styles.others_card_div}>
                         {
-                            Data.slice(0, 4)?.map((item: any, index: any) => {
+                            Data.slice(0, 4)?.map((item: DataType, index: number) => {
                                 return (
                                     <div className={styles.card_div} key={index}>
                                         <p className={styles.title}>{item?.title}</p>

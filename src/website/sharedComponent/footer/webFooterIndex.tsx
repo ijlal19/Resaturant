@@ -5,6 +5,11 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { Link } from "@mui/material";
 
+interface DataType {
+    title: string,
+    link: string
+}
+
 const LinkData = [
     {
         data: [
@@ -39,12 +44,12 @@ const WebsiteFooter = () => {
                     </div>
                 </div>
                 {
-                    LinkData?.map((item: any, index) => {
+                    LinkData?.map((item, index) => {
                         return (
                             <div className={styles.tab_link_div} key={index}>
                                 <ul className={styles.list_style}>
                                     {
-                                        item?.data?.map((linkItem: any, linkIndex: number) => {
+                                        item?.data?.map((linkItem: DataType, linkIndex: number) => {
                                             return (
                                                 <li key={linkIndex}>
                                                     <Link href={linkItem?.link} className={styles.link_style}>{linkItem?.title}</Link>
@@ -60,7 +65,7 @@ const WebsiteFooter = () => {
             </div>
             <div className={styles.copyright_div_main}>
                 <p className={styles.copyright_text}>2025 Resturant. All right reserved</p>
-                <p className={styles.powerdby_text}><span className={styles.span}>Powerd By</span><br/> Simplex Technology Solutions</p>
+                <p className={styles.powerdby_text}><span className={styles.span}>Powerd By</span><br /> Simplex Technology Solutions</p>
             </div>
         </div>
     )
