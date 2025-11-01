@@ -1,0 +1,61 @@
+@import '../../../../../globalConfig.scss';
+
+.card_div_main{
+    width: 100%;
+    max-width: 184px;
+    height: 200px;
+    background-color: $light;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .5s ease;
+    padding: 0px 0px 0px 0px !important;
+    box-sizing: border-box;
+
+    &:hover{
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
+
+    .image{
+        width: 170px;
+        padding: 0px !important;
+        box-sizing: border-box;
+        margin: 0px !important;
+        margin: auto;
+    }
+
+    .title{
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        color: $dark;
+        font-weight: bolder;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        padding: 3px 0px 0px 0px !important;
+        margin: 0px !important;
+        font-family: $font-roboto;
+    }
+
+    .circle_div{
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0px 0px 0px  0px !important;
+        padding:5px 5px 0px 0px !important;
+
+        .circle_div_inner{
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            background-color: $WhiteSmoke;
+        }
+    }
+}
