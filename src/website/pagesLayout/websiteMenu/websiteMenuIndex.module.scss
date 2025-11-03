@@ -1,0 +1,142 @@
+@import '../../../globalConfig.scss';
+
+.menu_div_main {
+    width: 100%;
+    padding: 0px 0px 10px 0px !important;
+    box-sizing: border-box;
+    background-color: $WhiteSmoke;
+
+
+    .menu_div_container {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        row-gap: 5px;
+        padding: 0px !important;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
+        .menu_category_div {
+            position: sticky;
+            top: 0px;
+            background-color: whitesmoke;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+            padding: 10px 10px !important;
+            overflow-x: auto;
+            overflow-y: hidden;
+            flex-wrap: nowrap;
+            scroll-behavior: smooth;
+
+            @media (max-width:768px) {
+                display: flex;
+                justify-content: left !important;
+            }
+
+            .category_name {
+                background-color: white;
+                border-radius: 5px;
+                color: black;
+                font-size: 16px;
+                font-family: $font-roboto;
+                display: flex;
+                flex-wrap: nowrap;
+                white-space: nowrap;
+                padding: 5px 10px !important;
+                box-sizing: border-box;
+                transition: all .5s ease;
+                cursor: pointer;
+
+            }
+
+            .active_category {
+                cursor: pointer;
+                background-color: $main_color;
+                border-radius: 5px;
+                color: white;
+                font-size: 16px;
+                font-family: $font-roboto;
+                display: flex;
+                flex-wrap: nowrap;
+                white-space: nowrap;
+                padding: 5px 10px !important;
+                box-sizing: border-box;
+                transition: all .5s ease;
+            }
+        }
+
+        .menu_category_div::-webkit-scrollbar {
+            height: 3px;
+        }
+
+        .menu_category_div::-webkit-scrollbar-thumb {
+            background: $main_color;
+            border-radius: 0px;
+        }
+
+
+        .menu_card_section_div {
+            width: 100%;
+            padding: 20px 10px !important;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 800px 1fr;
+
+            @media (max-width:1050px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .card_div_main {
+                padding: 10px !important;
+                box-sizing: border-box;
+                display: flex;
+                row-gap: 30px;
+                flex-direction: column;
+
+                .category_section_div {
+                    display: flex;
+                    padding: 10px 0px !important;
+                    flex-direction: column;
+
+                    .heading {
+                        font-family: $font-systemUi;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        width: 100%;
+                        text-align: left;
+
+                        .best {
+                            padding-bottom: 5px;
+                            box-sizing: border-box;
+                            border-bottom: 4px solid $main_color;
+                        }
+                    }
+
+                    .category_card_div {
+                        display: grid;
+                        padding: 20px 0px 0px 0px !important;
+                        box-sizing: border-box;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 20px;
+
+                        @media (max-width:1050px) {
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                    }
+                }
+
+
+                .bucket_div_main {}
+            }
+
+        }
+
+    }
+}
