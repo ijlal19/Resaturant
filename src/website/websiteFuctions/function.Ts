@@ -1,4 +1,4 @@
-function add3Dots(str: any, limit: any) {
+function Add3Dots(str: any, limit: any) {
   var dots = " ... ";
   if (str?.length > limit) {
     str = str.substring(0, limit) + dots;
@@ -6,4 +6,4 @@ function add3Dots(str: any, limit: any) {
   return str;
 }
 
-export { add3Dots}
+export { Add3Dots }
