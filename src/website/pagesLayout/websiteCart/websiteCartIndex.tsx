@@ -1,12 +1,10 @@
 import React from "react";
-import styles from './websiteBucketIndex.module.scss';
+import styles from './websiteCartIndex.module.scss';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import { Link } from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
-
-
 
 const WebsiteBucketPage = () => {
     return (
@@ -21,7 +19,7 @@ const WebsiteBucketPage = () => {
                             <Link href="" className={styles.menu_button}>EXPLORE MENU</Link>
                         </div>
                     </div>
-                    <div className={styles.you_donate_div}>
+                    {/* <div className={styles.you_donate_div}>
                         <p className={styles.div_inner_heading}><span className={styles.icon_box}><ArrowBackIosIcon className={styles.icon} /></span>You may also Donate</p>
                         <div className={styles.bhook_mitao_div}>
                             <img src="https://www.kfcpakistan.com/static/media/mitao-bhook-light.bb15764ef9a237fa8903.png" alt="" className={styles.image} />
@@ -36,10 +34,10 @@ const WebsiteBucketPage = () => {
                                 <button className={styles.donate_btn}>DONATE NOW</button>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
-                <div className={styles.left_side_div}></div>
+                {/* <div className={styles.left_side_div}></div> */}
             </div>
         </div>
     )

@@ -5,16 +5,24 @@ import LocalMallIcon from '@mui/icons-material/LocalMall';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import HeaderDrawer from './headerDrawerIndex';
+import LoginPopup from '../websiteLoginPopup/loginPopupIndex';
 
 const WebsiteHeader = () => {
-    const [openDrawer, setOpenDrawer] = useState(false); // 🔸 Drawer state
+    const [openDrawer, setOpenDrawer] = useState(true);
+    const [openPopup, setOpenPopup] = useState(false);
 
     const handleAdd = () => {
-        setOpenDrawer(true); // 🔸 Open drawer
+        setOpenDrawer(true);
     };
-
+    
     const handleCloseDrawer = () => {
-        setOpenDrawer(false); // 🔸 Close drawer
+        setOpenDrawer(false);
+    };
+    const handleOpenPopup = () => {
+        setOpenPopup(true);
+    };
+    const handleClosePopup = () => {
+        setOpenPopup(false);
     };
 
     return (
@@ -30,7 +38,7 @@ const WebsiteHeader = () => {
                 </div>
                 <div className={styles.nav_options_div}>
                     <button className={styles.button}><LocalMallIcon sx={{ fontSize: "17px", margin: '0px', padding: "0px" }} /></button>
-                    <button className={styles.login_button}>Login</button>
+                    <button className={styles.login_button}onClick={handleOpenPopup}>Login</button>
                 </div>
             </div>
             <div className={styles.input_div1}>
@@ -38,6 +46,7 @@ const WebsiteHeader = () => {
                 <button className={styles.search_button}><SearchRoundedIcon className={styles.search_icon} /></button>
             </div>
                   <HeaderDrawer Open={openDrawer} Close={handleCloseDrawer} />
+                  <LoginPopup  Open={openPopup} Close={handleClosePopup}/>
         </div>
     )
 }

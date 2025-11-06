@@ -1,6 +1,6 @@
 @import '../../../../globalConfig.scss';
 
-.card_div_main{
+.card_div_main {
     flex: 0 0 280px;
     display: flex;
     flex-direction: column;
@@ -9,20 +9,21 @@
     border-radius: 10px;
     background-color: $light;
     overflow: hidden;
-    margin: 5px 0px 5px 0px ;
+    margin: 5px 0px 5px 0px;
     box-shadow: 0px 0px 10px rgba(128, 127, 127, 0.373);
 
-    .card_image{
+    .card_image {
         width: 100%;
         object-fit: cover;
     }
 
-    .card_div_content{
+    .card_div_content {
         padding: 10px 0px 0px 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        .card_title{
+
+        .card_title {
             font-size: 18px;
             font-family: $font-roboto;
             margin: 0px;
@@ -34,7 +35,7 @@
             text-align: left;
         }
 
-        .card_detail{
+        .card_detail {
             font-size: 14px;
             color: black;
             padding: 5px 0px !important;
@@ -43,16 +44,16 @@
             text-align: left;
         }
 
-        .price{
+        .price {
             font-size: 14px;
             font-weight: Bolder;
             font-family: $font-systemUi;
-            padding: 5px 0px ;
+            padding: 5px 0px;
             width: 100%;
             text-align: left;
         }
 
-        .addtocart_button{
+        .addtocart_button {
             text-align: center;
             padding: 5px 10px !important;
             background-color: $main_color;
@@ -61,13 +62,19 @@
             font-weight: bolder;
             font-family: $font-roboto;
             letter-spacing: 1px;
-            margin:10px auto 0px auto !important;
+            margin: 10px auto 0px auto !important;
             border-radius: 5px;
+
+            @media (max-width:768px) {
+                margin: 0px auto !important;
+                font-size: 12px;
+
+            }
         }
     }
 
     @media (max-width:900px) {
-        border-radius: 0px !important;
         margin: 5px 0px 0px 0px !important;
+        box-shadow: 0px 0px 10px rgba(183, 181, 181, 0.373);
     }
 }

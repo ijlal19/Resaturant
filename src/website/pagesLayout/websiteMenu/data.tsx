@@ -3,13 +3,13 @@ export const kfcMenuData = [
     category: "Promotion",
     items: [
       {
-        title: "Zinger Stacker Combo",
+        title: "Zinger Stacker",
         price: "890",
         description: "Double zinger fillets, spicy mayo, cheese slice, lettuce, fries, and drink.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
-        title: "Krunch Chicken Combo",
+        title: "Chicken Combo",
         price: "670",
         description: "Crispy chicken fillet, fresh lettuce, spicy mayo, fries, and drink.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",

@@ -126,6 +126,10 @@
                             box-sizing: border-box;
                             border-bottom: 4px solid $main_color;
                         }
+
+                        @media (max-width:768px) {
+                            font-size: 20px;
+                        }
                     }
 
                     .category_card_div {
@@ -169,13 +173,13 @@
 
                 .bucket_div {
                     width: 100%;
-                    cursor: pointer;
                     background-color: white;
                     position: sticky;
                     top: 70px;
                     padding: 0px 0px !important;
                     border-radius: 10px;
-                    box-shadow: 0px 0px 10px grey;
+                    overflow: hidden;
+                    box-shadow: 0px 0px 10px rgba(174, 173, 173, 0.495);
 
                     @media (max-width:1000px) {
                         position: fixed;
@@ -203,14 +207,92 @@
                         width: 100%;
                         padding: 10px 10px !important;
                         box-sizing: border-box;
+                        height: auto;
+                        box-sizing: border-box;
+                        max-height: 250px;
+                        overflow-y: auto;
+                        overflow-x: hidden;
+                        flex-wrap: nowrap;
+                        scroll-behavior: smooth;
 
                         @media (max-width:1000px) {
                             display: none;
                         }
 
+                        .items_card_main {
+                            width: 100%;
+                            background-color: whitesmoke;
+                            display: grid;
+                            padding: 10px !important;
+                            box-sizing: border-box;
+                            border-radius: 5px;
+                            margin: 5px 0px;
+                            grid-template-columns: 80px 1fr;
+
+                            .product_image {
+                                width: 100px;
+                            }
+
+                            .detail_div {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+
+                                .title_div {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    flex-direction: row;
+                                    padding: 7px 5px;
+
+                                    .title {
+                                        font-size: 18px;
+                                        font-family: $font-roboto;
+                                        font-weight: bold;
+                                        letter-spacing: 1px;
+                                        margin: 0px;
+                                        padding: 0px;
+                                    }
+
+                                    .price {
+                                        font-size: 16px;
+                                        font-family: $font-roboto;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+
+                            .quantity_div {
+                                display: flex;
+                                width: 100%;
+                                justify-content: left;
+                                column-gap: 10px;
+                                align-items: center;
+                                padding: 5px 0px 5px 10px !important;
+                                color: #333333;
+
+                                .action_icon {
+                                    font-size: 20px;
+                                    // width: 20px;
+                                    font-weight: bolder;
+                                    font-family: $font-regular;
+                                    padding: 0px !important;
+                                    cursor: pointer;
+                                    margin: 0px !important;
+                                }
+
+                                .qt_number {
+                                    font-size: 18px;
+                                    margin: 0px !important;
+                                    font-weight: bolder;
+                                    font-family: $font-regular;
+                                    padding: 0px 0px !important;
+                                }
+                            }
+                        }
+
                         .bucket_image_div_container {
                             border-radius: 10px;
-                            padding: 20px 10px !important;
+                            padding: 10px 10px !important;
                             box-sizing: border-box;
                             box-shadow: 0px 0px 10px #f1f3f6;
                             // background-color: #f1f3f6;
@@ -239,8 +321,18 @@
                         }
                     }
 
+                    .bucket_image_div_main::-webkit-scrollbar {
+                        // height: 8px;
+                        width: 4px;
+                    }
+
+                    .bucket_image_div_main::-webkit-scrollbar-thumb {
+                        background: #333333;
+                        border-radius: 4px;
+                    }
+
                     .view_bucket_div {
-                        margin: 10px 0px !important;
+                        margin: 10px 0px 0px 0px !important;
                         width: 100%;
                         display: flex;
                         justify-content: space-between;
@@ -252,27 +344,29 @@
 
                         @media (max-width:1000px) {
                             margin: 0px auto !important;
-                            max-width: 400px;
-                            border-radius: 10px;
+                            width: 95%;
                         }
 
                         .item_ {
                             font-size: 16px;
                             font-family: $font-regular;
-                            font-weight: 600;
+                            display: flex;
+                            align-items: center;
+                            // font-weight: 600;
 
                             .price {
-                                font-family: $font-roboto;
-                                font-weight: bolder;
+                                font-family: $font-bold;
+                                padding-left: 2px;
+                                // font-weight: bolder;
                             }
 
                         }
 
                         .view_bucket_btn {
-                            font-family: $font-systemUi;
-                            letter-spacing: .5px;
-                            font-weight: bolder;
-                            font-size: 18px;
+                            font-family: $font-roboto;
+                            letter-spacing: 1px;
+                            // font-weight: bolder;
+                            font-size: 20px;
 
                         }
                     }
