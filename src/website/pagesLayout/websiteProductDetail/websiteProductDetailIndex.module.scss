@@ -1,0 +1,105 @@
+@import '../../../globalConfig.scss';
+
+.detail_div_main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 10px !important;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+
+    .detail_div_container {
+        width: 100%;
+        max-width: 1100px;
+        padding: 20px 20px !important;
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid #cbc7c7c7;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
+
+        @media (max-width:769px) {
+            grid-template-columns: repeat(1 , 1fr);
+        }
+
+        .image_box {
+            width: 100%;
+
+            .img {
+                border-radius: 10px;
+                margin: auto;
+            }
+        }
+
+        .producy_detail_div {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            @media (max-width:768px) {
+            padding: 10px 0px !important;
+            box-sizing: border-box;
+            }
+            
+            .title {
+                font-size: 35px;
+                font-family: $font-roboto;
+                color: #000000;
+                text-transform: uppercase;
+                margin: 0px;
+                padding: 0px;
+                @media (max-width:768px) {
+                font-size: 30px;
+                }
+            }
+            
+            .price {
+                font-size: 18px;
+                font-family: $font-systemUi;
+                color: #000000;
+                margin: 0px;
+                padding: 5px 0px 0px 0px !important;
+                @media (max-width:768px) {
+                // font-size: 16px;
+                }
+            }
+
+            .price1 {
+                font-size: 14px;
+                font-family: $font-systemUi;
+                color: $main_color;
+                margin: 0px;
+                padding: 0px 0px 5px 0px;
+            }
+
+            .desc {
+                font-size: 16px;
+                letter-spacing: 1px;
+                font-family: $font-regular;
+                color: grey;
+            }
+
+            .add_to_btn {
+                width: 100%;
+                background-color: $main_color;
+                color: white;
+                padding: 7px 10px !important;
+                box-sizing: border-box;
+                text-align: center;
+                border-radius: 5px;
+                font-weight: bolder;
+                margin: 20px 0px 0px 0px ;
+                font-size: 18px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-family: $font-roboto;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}

@@ -3,24 +3,28 @@ export const kfcMenuData = [
     category: "Promotion",
     items: [
       {
+        id: 1,
         title: "Zinger Stacker",
         price: "890",
         description: "Double zinger fillets, spicy mayo, cheese slice, lettuce, fries, and drink.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 2,
         title: "Chicken Combo",
         price: "670",
         description: "Crispy chicken fillet, fresh lettuce, spicy mayo, fries, and drink.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 3,
         title: "Twister Combo",
         price: "750",
         description: "Tortilla wrap with crispy chicken, tangy sauce, lettuce, fries, and drink.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 4,
         title: "Twister Combo",
         price: "750",
         description: "Tortilla wrap with crispy chicken, tangy sauce, lettuce, fries, and drink.",
@@ -32,18 +36,21 @@ export const kfcMenuData = [
     category: "Everyday Value",
     items: [
       {
+        id: 5,
         title: "Krunch Burger",
         price: "390",
         description: "Crispy chicken fillet with mayo and lettuce in a soft bun.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 6,
         title: "Rice & Spice",
         price: "460",
         description: "Spicy rice with crispy chicken fillet and special sauce.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 7,
         title: "Zingeratha",
         price: "450",
         description: "A desi paratha wrap filled with zinger fillet and sauces.",
@@ -55,18 +62,21 @@ export const kfcMenuData = [
     category: "Ala-Carte-&-Combos",
     items: [
       {
+        id: 8,
         title: "Zinger Burger",
         price: "690",
         description: "Classic zinger fillet with lettuce and mayo in a sesame bun.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 9,
         title: "Mighty Zinger",
         price: "890",
         description: "Double chicken fillet with cheese, lettuce, and spicy mayo.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 10,
         title: "Zinger Combo",
         price: "990",
         description: "Zinger burger served with fries and a chilled drink.",
@@ -78,30 +88,35 @@ export const kfcMenuData = [
     category: "Signature-Boxes",
     items: [
       {
+        id: 11,
         title: "Wow Box",
         price: "1150",
         description: "Zinger burger, chicken piece, fries, drink, and coleslaw in one box.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 12,
         title: "Crispy Box",
         price: "1200",
         description: "Two chicken pieces, fries, drink, and coleslaw.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 13,
         title: "Crispy Box",
         price: "1200",
         description: "Two chicken pieces, fries, drink, and coleslaw.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 14,
         title: "Crispy Box",
         price: "1200",
         description: "Two chicken pieces, fries, drink, and coleslaw.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 15,
         title: "Zinger Stacker Box",
         price: "1250",
         description: "Stacker burger, fries, drink, and chicken piece for extra hunger.",
@@ -113,18 +128,21 @@ export const kfcMenuData = [
     category: "Sharing",
     items: [
       {
+        id: 16,
         title: "Family Festival 1",
         price: "2150",
         description: "4 chicken pieces, 2 zinger burgers, large fries, and 1.5L drink.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 17,
         title: "Family Festival 2",
         price: "2450",
         description: "6 chicken pieces, 2 zinger burgers, 2 rice, and 1.5L drink.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 18,
         title: "Family Festival 3",
         price: "2750",
         description: "9 chicken pieces, 3 zinger burgers, 3 rice, large fries, and drink.",
@@ -136,18 +154,21 @@ export const kfcMenuData = [
     category: "Snacks-&-Beverages",
     items: [
       {
+        id: 19,
         title: "Fries Bucket",
         price: "450",
         description: "Crispy golden fries in a large bucket.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 20,
         title: "Hot Wings (6 pcs)",
         price: "690",
         description: "6 spicy crispy wings for the perfect snack time.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 21,
         title: "Pepsi (Regular)",
         price: "150",
         description: "Chilled refreshing Pepsi drink.",
@@ -159,12 +180,14 @@ export const kfcMenuData = [
     category: "Midnight (Start at 12 am)",
     items: [
       {
+        id: 22,
         title: "Midnight Deal 2",
         price: "1250",
         description: "Twister, fries, and drink – perfect for late night cravings.",
         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
       },
       {
+        id: 23,
         title: "Midnight Deal 3",
         price: "1550",
         description: "2 Krunch burgers, fries, and drink for sharing after midnight.",
@@ -173,3 +196,179 @@ export const kfcMenuData = [
     ],
   },
 ];
+
+// export const kfcMenuData = [
+//   {
+//     category: "Promotion",
+//     items: [
+//       {
+//         title: "Zinger Stacker",
+//         price: "890",
+//         description: "Double zinger fillets, spicy mayo, cheese slice, lettuce, fries, and drink.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Chicken Combo",
+//         price: "670",
+//         description: "Crispy chicken fillet, fresh lettuce, spicy mayo, fries, and drink.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Twister Combo",
+//         price: "750",
+//         description: "Tortilla wrap with crispy chicken, tangy sauce, lettuce, fries, and drink.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Twister Combo",
+//         price: "750",
+//         description: "Tortilla wrap with crispy chicken, tangy sauce, lettuce, fries, and drink.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//     ],
+//   },
+//   {
+//     category: "Everyday Value",
+//     items: [
+//       {
+//         title: "Krunch Burger",
+//         price: "390",
+//         description: "Crispy chicken fillet with mayo and lettuce in a soft bun.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Rice & Spice",
+//         price: "460",
+//         description: "Spicy rice with crispy chicken fillet and special sauce.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Zingeratha",
+//         price: "450",
+//         description: "A desi paratha wrap filled with zinger fillet and sauces.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//     ],
+//   },
+//   {
+//     category: "Ala-Carte-&-Combos",
+//     items: [
+//       {
+//         title: "Zinger Burger",
+//         price: "690",
+//         description: "Classic zinger fillet with lettuce and mayo in a sesame bun.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Mighty Zinger",
+//         price: "890",
+//         description: "Double chicken fillet with cheese, lettuce, and spicy mayo.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Zinger Combo",
+//         price: "990",
+//         description: "Zinger burger served with fries and a chilled drink.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//     ],
+//   },
+//   {
+//     category: "Signature-Boxes",
+//     items: [
+//       {
+//         title: "Wow Box",
+//         price: "1150",
+//         description: "Zinger burger, chicken piece, fries, drink, and coleslaw in one box.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Crispy Box",
+//         price: "1200",
+//         description: "Two chicken pieces, fries, drink, and coleslaw.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Crispy Box",
+//         price: "1200",
+//         description: "Two chicken pieces, fries, drink, and coleslaw.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Crispy Box",
+//         price: "1200",
+//         description: "Two chicken pieces, fries, drink, and coleslaw.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Zinger Stacker Box",
+//         price: "1250",
+//         description: "Stacker burger, fries, drink, and chicken piece for extra hunger.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//     ],
+//   },
+//   {
+//     category: "Sharing",
+//     items: [
+//       {
+//         title: "Family Festival 1",
+//         price: "2150",
+//         description: "4 chicken pieces, 2 zinger burgers, large fries, and 1.5L drink.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Family Festival 2",
+//         price: "2450",
+//         description: "6 chicken pieces, 2 zinger burgers, 2 rice, and 1.5L drink.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Family Festival 3",
+//         price: "2750",
+//         description: "9 chicken pieces, 3 zinger burgers, 3 rice, large fries, and drink.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//     ],
+//   },
+//   {
+//     category: "Snacks-&-Beverages",
+//     items: [
+//       {
+//         title: "Fries Bucket",
+//         price: "450",
+//         description: "Crispy golden fries in a large bucket.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Hot Wings (6 pcs)",
+//         price: "690",
+//         description: "6 spicy crispy wings for the perfect snack time.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Pepsi (Regular)",
+//         price: "150",
+//         description: "Chilled refreshing Pepsi drink.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//     ],
+//   },
+//   {
+//     category: "Midnight (Start at 12 am)",
+//     items: [
+//       {
+//         title: "Midnight Deal 2",
+//         price: "1250",
+//         description: "Twister, fries, and drink – perfect for late night cravings.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//       {
+//         title: "Midnight Deal 3",
+//         price: "1550",
+//         description: "2 Krunch burgers, fries, and drink for sharing after midnight.",
+//         img: "https://www.kfcpakistan.com/images/a98f9360-67f6-11f0-adfb-ebbe8f991087-Thumbnail_variant_0-2025-07-23185555.png",
+//       },
+//     ],
+//   },
+// ];

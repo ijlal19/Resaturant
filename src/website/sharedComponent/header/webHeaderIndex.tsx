@@ -8,7 +8,7 @@ import HeaderDrawer from './headerDrawerIndex';
 import LoginPopup from '../websiteLoginPopup/loginPopupIndex';
 
 const WebsiteHeader = () => {
-    const [openDrawer, setOpenDrawer] = useState(true);
+    const [openDrawer, setOpenDrawer] = useState(false);
     const [openPopup, setOpenPopup] = useState(false);
 
     const handleAdd = () => {

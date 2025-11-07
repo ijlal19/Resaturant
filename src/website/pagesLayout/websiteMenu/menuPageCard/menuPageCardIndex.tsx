@@ -1,7 +1,7 @@
 'use client'
 import react from 'react';
 import styles from './menuPageCardIndex.module.scss';
-import { useMediaQuery } from '@mui/material';
+import { Link, useMediaQuery } from '@mui/material';
 interface DataType {
     props: {
         img: string,
@@ -22,9 +22,17 @@ const MenuPage_Product_Card = ({ props }: DataType) => {
         return str;
     }
 
+    const getHref =(data:any) => {
+        if (!data || !data.title) return '';
+        const formattedTitle = data.title.trim().replace(/\s+/g, '-').toLowerCase();
+        return `/product/${formattedTitle}/${data?.id}`;
+    }
+
     return (
         <div className={styles.card_div_main}>
-            <img src={props?.img} alt="" className={styles.card_image} />
+            <Link href={getHref(props)} className={styles.image_div}>
+                <img src={props?.img} alt="" className={styles.card_image} />
+            </Link>
             <div className={styles.card_div_content}>
                 <p className={styles.card_title}>{props?.title}</p>
                 <p className={styles.card_detail}>{`${Add3Dots(props?.description, isMobile ? 40 : 60)}`}</p>
