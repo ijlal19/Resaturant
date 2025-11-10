@@ -58,7 +58,7 @@ export default function HeaderDrawer({ Open, Close }: HeaderDrawerProps) {
     };
     const handleClosePopup = () => {
         setOpenPopup(false);
-    };
+    }; 
 
     const DrawerList = (
         <div className={styles.drawer_list_main} role="presentation" onClick={toggleDrawer(false)}>
