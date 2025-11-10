@@ -1,45 +1,70 @@
 import React from "react";
 import styles from './websiteCartIndex.module.scss';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import { Link } from "@mui/material";
-import AddIcon from '@mui/icons-material/Add';
+import { kfcMenuItems } from "./data";
+import DeleteIcon from '@mui/icons-material/Delete';
 import RemoveIcon from '@mui/icons-material/Remove';
+import AddIcon from '@mui/icons-material/Add';
 
-const WebsiteBucketPage = () => {
+const WebsiteCartPage = () => {
     return (
-        <div className={styles.bucket_div_main}>
-            <div className={styles.bucket_div_container}>
-                <div className={styles.right_side_div}>
-                    <div className={styles.your_item_cart_div}>
-                        <p className={styles.div_inner_heading}><div className={styles.icon_box}><ArrowBackIosNewIcon className={styles.icon} /></div>Items From Your Cart</p>
-                        <div className={styles.menu_div}>
-                            <img src="https://www.kfcpakistan.com/static/media/kfc-meal.afc417f5d19998efd26b.png" alt="" className={styles.menu_image} />
-                            <p className={styles.note}>You haven’t added any items in bucket yet</p>
-                            <Link href="" className={styles.menu_button}>EXPLORE MENU</Link>
+        <div className={styles.cart_div_main}>
+            <div className={styles.cart_div_container}>
+                <div className={styles.heading_div}>
+                    <p className={styles.page_heading}>CART</p>
+                    <Link href="#" className={styles.link}>Continue Shopping</Link>
+                </div>
+                <div className={styles.cart_section_div}>
+                    <div className={styles.cart_side}>
+                        {
+                            kfcMenuItems?.length > 0 ?
+                                kfcMenuItems?.map((e: any, i: number) => {
+                                    return (
+                                        <div className={styles.product_cart} key={i}>
+                                            <img src={e?.img} alt="" className={styles.product_image} />
+                                            <div className={styles.detail_div}>
+                                                <div className={styles.title_div}>
+                                                    <p className={styles.title}>{e?.title}</p>
+                                                    <div className={styles.quantity_div}>
+                                                        {
+                                                            e?.qt === 1 ?
+                                                                <button className={styles.action_btn}>
+                                                                    <DeleteIcon className={styles.action_icon} />
+                                                                </button>
+                                                                :
+                                                                <button className={styles.action_btn}>
+                                                                    <RemoveIcon className={styles.action_icon} />
+                                                                </button>
+                                                        }
+                                                        <p className={styles.qt_number}>{e?.qt || "1"}</p>
+                                                        <button className={styles.action_btn}>
+                                                            <AddIcon className={styles.action_icon} />
+                                                        </button>
+                                                    </div>
+                                                    <Link href="#" className={styles.remove}>Remove</Link>
+                                                </div>
+                                                <div className={styles.amount}>Rs {e?.price}.00</div>
+                                            </div>
+                                        </div>
+                                    )
+                                }) : "No Data"
+                        }
+                    </div>
+                    <div className={styles.total_side}>
+                        <div className={styles.subtotal_div_main}>
+                            <div className={styles.heading}>
+                                <p className={styles.subtotal_heading}>Subtotal</p>
+                                <p className={styles.total_price}>Rs 800.00</p>
+                            </div>
+                            <button className={styles.checkout_button}>CHECK OUT</button>
+                            <p className={styles.end_text}>Shipping, taxes, and discount codes calculated at checkout.</p>
                         </div>
                     </div>
-                    {/* <div className={styles.you_donate_div}>
-                        <p className={styles.div_inner_heading}><span className={styles.icon_box}><ArrowBackIosIcon className={styles.icon} /></span>You may also Donate</p>
-                        <div className={styles.bhook_mitao_div}>
-                            <img src="https://www.kfcpakistan.com/static/media/mitao-bhook-light.bb15764ef9a237fa8903.png" alt="" className={styles.image} />
-                            <p className={styles.tag}>Join the movement to champion deaf inclusion and empower the education of Pakistan's youth.</p>
-
-                            <div className={styles.donate_btn_box}>
-                                <div className={styles.donate_inner}>
-                                    <button className={styles.sign_btn}><RemoveIcon className={styles.icon}/></button>
-                                    <p className={styles.donate_price}>Rs 20</p>
-                                    <button className={styles.sign_btn}><AddIcon className={styles.icon}/></button>
-                                </div>
-                                <button className={styles.donate_btn}>DONATE NOW</button>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
-
-                {/* <div className={styles.left_side_div}></div> */}
             </div>
         </div>
     )
 }
-export default WebsiteBucketPage
+export default WebsiteCartPage
+
+// <p className={styles.div_inner_heading}><div className={styles.icon_box}><ArrowBackIosNewIcon className={styles.icon} /></div>Items From Your Cart</p>

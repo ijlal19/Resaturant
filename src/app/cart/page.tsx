@@ -1,8 +1,8 @@
-import WebsiteBucketPage from "@/website/pagesLayout/websiteCart/websiteCartIndex"
+import WebsiteCartPage from "@/website/pagesLayout/websiteCart/websiteCartIndex"
 
 const BucketPage = () => {
     return(
-        <WebsiteBucketPage />
+        <WebsiteCartPage />
     )
 }
 export default BucketPage

@@ -176,7 +176,7 @@ const WebsiteMenuPage = () => {
                                         </div>
                                 }
                             </div>
-                            <Link href="/bucket" className={styles.view_bucket_div}>
+                            <Link href="/cart" className={styles.view_bucket_div}>
                                 <p className={styles.item_}>0 Item <span className={styles.price}> | Rs 0</span></p>
                                 <p className={styles.view_bucket_btn}>View Bucket</p>
                             </Link>
