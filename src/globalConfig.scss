@@ -1,9 +1,12 @@
-$main_color: #ea002a; 
+$main_color: #000000;
 $main_light_color: #ea002bb9;
 $light: white;
 $dark: #000000;
 $DarkGrey: #333333;
 $WhiteSmoke: whitesmoke;
+$theme-color : white;
+$main-color : #ea002a;
+$text-color : black;
 
 @font-face {
   font-family: 'Lato';
@@ -25,6 +28,7 @@ $WhiteSmoke: whitesmoke;
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'System-ui';
   src: url('/fonts/System-ui.ttf') format('truetype');
