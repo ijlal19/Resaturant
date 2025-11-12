@@ -13,7 +13,7 @@
     @media (max-width:768px) {
         display: flex;
         flex-direction: column;
-        padding-bottom: 10px !important;
+        // padding-bottom: 10px !important;
     }
 
     .header_bar_div {
@@ -65,8 +65,9 @@
             }
 
             .logo_image {
-                width: 100px;
+                width: 120px;
                 cursor: pointer;
+                margin-top: 20px;
             }
         }
 
@@ -104,7 +105,7 @@
 
 .drawer_list_main {
     width: 250px;
-    padding: 10px 10px 10px 10px !important;
+    padding: 10px 0px 10px 0px !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,10 +115,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 5px;
+        padding: 5px 10px 5px 10px !important;
 
         .logo {
-            width: 100px;
+            width: 120px;
+            margin-top: 20px;
         }
 
         .close_btn {
@@ -130,6 +132,7 @@
             border: 1px solid #c8c8c8bb;
             background-color: whitesmoke;
             cursor: pointer;
+
             .icon {
                 color: grey;
                 font-size: 14px;
@@ -138,30 +141,28 @@
         }
     }
 
-    // .divider {
-    //     width: 100%;
-    //     border: 1px solid #4544449e;
-    // }
+    .hr {
+        width: 100%;
+        max-width: 400px;
+        border: 1px solid #a9a7a7a2;
+    }
 
     .unorder_list {
         display: flex;
         flex-direction: column;
-        padding: 5px 0px 10px 0px !important;
+        padding: 10px 10px 10px 10px !important;
         box-sizing: border-box;
 
         .li {
-            padding: 10px;
             box-sizing: border-box;
             display: flex;
             align-items: center;
-            column-gap: 7px;
-            font-size: 18px;
-            font-family: $font-regular;
+            // column-gap: 7px;
+            font-size: 16px;
             transition: all .5s ease;
 
             &:hover {
                 background-color: rgba(193, 189, 189, 0.355);
-                // padding: 10px 0px 10px 0px !important;
                 cursor: pointer;
             }
 
@@ -169,6 +170,16 @@
                 width: 25px;
             }
 
+            .link {
+                text-decoration: none;
+                width: 100%;
+                height: 100%;
+                text-transform: uppercase;
+                padding: 7.5px;
+                letter-spacing: 1px;
+                color: rgb(55, 55, 55);
+                font-family: $font-regular2;
+            }
         }
     }
 

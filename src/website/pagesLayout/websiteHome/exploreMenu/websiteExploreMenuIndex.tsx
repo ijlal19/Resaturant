@@ -1,49 +1,67 @@
 'use client'
 import React from 'react';
 import styles from './websiteExploreMenuIndex.module.scss';
-import { Navigation, FreeMode, Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import ExploreMenuCard from './explorMenyCard/exploreMenuCard';
+import { CardOne } from '@/website/sharedComponent/websiteCards/allCardIndex';
 
 interface DataType {
     title: string,
-    img: string
+    img: string,
+    retail_price: number,
+    sale_price: number
 }
 
 const WebsiteExploreMenu = () => {
     const Data = [
         {
             title: "Crunchy Burgers",
-            img: "https://www.kfcpakistan.com/images/12dd14f0-c523-11ee-a0b2-43ac3530dd54-KRUNCH-590X480-2024-02-06190812.png"
+            retail_price: 1200.00,
+            sale_price: 1100.00,
+            img: "https://elyscents.pk/cdn/shop/files/3perfume.jpg?v=1760181185&width=360"
         },
         {
             title: "Crunchy Burgers",
-            img: "https://www.kfcpakistan.com/images/12dd14f0-c523-11ee-a0b2-43ac3530dd54-KRUNCH-590X480-2024-02-06190812.png"
+            retail_price: 1200.00,
+            sale_price: 1100.00,
+            img: "https://elyscents.pk/cdn/shop/files/3perfume.jpg?v=1760181185&width=360"
         },
         {
             title: "Crunchy Burgers",
-            img: "https://www.kfcpakistan.com/images/12dd14f0-c523-11ee-a0b2-43ac3530dd54-KRUNCH-590X480-2024-02-06190812.png"
+            retail_price: 1200.00,
+            sale_price: 1100.00,
+            img: "https://elyscents.pk/cdn/shop/files/3perfume.jpg?v=1760181185&width=360"
         },
         {
             title: "Crunchy Burgers",
-            img: "https://www.kfcpakistan.com/images/12dd14f0-c523-11ee-a0b2-43ac3530dd54-KRUNCH-590X480-2024-02-06190812.png"
+            retail_price: 1200.00,
+            sale_price: 1100.00,
+            img: "https://elyscents.pk/cdn/shop/files/3perfume.jpg?v=1760181185&width=360"
         },
         {
             title: "Crunchy Burgers",
-            img: "https://www.kfcpakistan.com/images/12dd14f0-c523-11ee-a0b2-43ac3530dd54-KRUNCH-590X480-2024-02-06190812.png"
+            retail_price: 1200.00,
+            sale_price: 1100.00,
+            img: "https://elyscents.pk/cdn/shop/files/3perfume.jpg?v=1760181185&width=360"
         },
         {
             title: "Crunchy Burgers",
-            img: "https://www.kfcpakistan.com/images/12dd14f0-c523-11ee-a0b2-43ac3530dd54-KRUNCH-590X480-2024-02-06190812.png"
+            retail_price: 1200.00,
+            sale_price: 1100.00,
+            img: "https://elyscents.pk/cdn/shop/files/3perfume.jpg?v=1760181185&width=360"
         },
         {
             title: "Crunchy Burgers",
-            img: "https://www.kfcpakistan.com/images/12dd14f0-c523-11ee-a0b2-43ac3530dd54-KRUNCH-590X480-2024-02-06190812.png"
+            retail_price: 1200.00,
+            sale_price: 1100.00,
+            img: "https://elyscents.pk/cdn/shop/files/3perfume.jpg?v=1760181185&width=360"
         },
         {
             title: "Crunchy Burgers",
-            img: "https://www.kfcpakistan.com/images/12dd14f0-c523-11ee-a0b2-43ac3530dd54-KRUNCH-590X480-2024-02-06190812.png"
+            retail_price: 1200.00,
+            sale_price: 1100.00,
+            img: "https://elyscents.pk/cdn/shop/files/3perfume.jpg?v=1760181185&width=360"
         },
     ]
     return (
@@ -75,9 +93,9 @@ const WebsiteExploreMenu = () => {
                                 spaceBetween: 25
                             },
                             900: {
-                                slidesPerView: 5,
+                                slidesPerView: 4,
                                 slidesPerGroup: 1,
-                                spaceBetween: 25
+                                spaceBetween: 5
                             },
                         }}
                     >
@@ -85,7 +103,7 @@ const WebsiteExploreMenu = () => {
                             Data?.map((item: DataType, index: number) => {
                                 return (
                                     <SwiperSlide key={index} className={styles.swiper_slide}>
-                                        <ExploreMenuCard props={item} />
+                                        <CardOne props={item} />
                                     </SwiperSlide>
                                 )
                             })

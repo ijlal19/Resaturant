@@ -1,0 +1,74 @@
+@import '../../../globalConfig.scss';
+
+.card_div_main{
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .5s ease;
+    padding: 0px 0px 0px 0px !important;
+    box-sizing: border-box;
+
+    &:hover{
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
+
+    .image{
+        width: 100%;
+        padding: 0px !important;
+        box-sizing: border-box;
+        margin: 0px !important;
+        margin: auto;
+    }
+
+    .title{
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        color: $dark;
+        // font-weight: bolder;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        padding: 10px 0px 3px 0px !important;
+        margin: 0px !important;
+        color: #333333;
+        font-family: $font-regular;
+    }
+    .price{
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+        padding: 0px 0px 0px 0px !important;
+        font-family: $font-regular2;
+        box-sizing: border-box;
+        color: #333333;
+    }
+    .saveprice{
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+        padding: 0px 0px 10px 0px !important;
+        font-family: $font-regular2;
+        box-sizing: border-box;
+        color: rgb(248, 24, 24);
+    }
+
+    .add_cart_button{
+        width: 100%;
+        padding: 7px 10px;
+        font-size: 18px;
+        color: $text-color;
+        cursor: pointer;
+        background-color: $main-color;
+    }
+}

@@ -17,18 +17,20 @@
         justify-content: left;
 
         .heading {
-            font-family: $font-roboto;
+            font-family: $font-regular2;
             font-size: 28px;
             width: 100%;
-            text-align: left;
-            font-weight: bolder;
+            text-align: center !important;
+            width: 100%;
             margin-bottom: 20px;
+            letter-spacing: .5px;
+            color: #333333;
 
-            .top{
-                padding-bottom: 5px;
-                border-bottom: 3px solid $main_color;
+            @media (max-width:768px) {
+                font-size: 24px;
             }
         }
+
 
         .card_section {
             width: 100%;

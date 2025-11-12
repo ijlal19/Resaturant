@@ -1,0 +1,16 @@
+@import '../../../../globalConfig.scss';
+
+.banner_div_main{
+    box-sizing: border-box;
+    width: 100%;
+
+    .image_slide{
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+
+        .image{
+            width: 100%;
+        }
+    }
+}
