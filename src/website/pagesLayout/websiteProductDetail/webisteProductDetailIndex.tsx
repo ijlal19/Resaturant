@@ -11,7 +11,7 @@ interface DataType {
     id: string,
     description: string
 }
-
+ 
 const ProductDetail = () => {
     const [ProductData, setProductData] = useState<any>([])
     const { slug1 } = useParams()
