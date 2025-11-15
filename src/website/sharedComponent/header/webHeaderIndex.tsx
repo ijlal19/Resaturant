@@ -12,6 +12,7 @@ import Data from './data';
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import Cart_Drawer from './cartDrawer/cartDrawerIndex';
 
 
 interface DataType {
@@ -23,6 +24,7 @@ interface DataType {
 
 const WebsiteHeader = () => {
     const [openDrawer, setOpenDrawer] = useState(false);
+    const [openCartDrawer, setOpenCartDrawer] = useState(true);
     const [openPopup, setOpenPopup] = useState(false);
     const [SlideRotation, setSlideRotation] = useState<any>(null)
 
@@ -32,6 +34,12 @@ const WebsiteHeader = () => {
 
     const handleCloseDrawer = () => {
         setOpenDrawer(false);
+    };
+    const handleCartDrawer = () => {
+        setOpenCartDrawer(true);
+    };
+    const handleCartCloseDrawer = () => {
+        setOpenCartDrawer(false);
     };
     const handleOpenPopup = () => {
         setOpenPopup(true);
@@ -89,13 +97,14 @@ const WebsiteHeader = () => {
                     <button className={styles.icon_button}>
                         <PermIdentityOutlinedIcon className={styles.icon} />
                     </button>
-                    <button className={styles.icon_button}>
+                    <button className={styles.icon_button} onClick={handleCartDrawer}>
                         <ShoppingBagOutlinedIcon className={styles.icon} />
                     </button>
                 </div>
             </div>
             <HeaderDrawer Open={openDrawer} Close={handleCloseDrawer} />
             <LoginPopup Open={openPopup} Close={handleClosePopup} />
+            <Cart_Drawer Open={openCartDrawer} Close={handleCartCloseDrawer} />
         </div>
     )
 }
