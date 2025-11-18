@@ -1,0 +1,65 @@
+@import '../../../globalConfig.scss';
+
+.search_main_div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start !important;
+    padding: 20px 10px !important;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+
+    .search_container_div {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px 10px !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 20px;
+
+        .search_div {
+            display: flex;
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            column-gap: 10px;
+            justify-content: space-between;
+
+            .input_div {
+                display: flex;
+                width: 100%;
+                overflow: hidden;
+                // max-width: 400px;
+                height: 45px;
+                justify-content: left;
+                border: 1px solid #ababab;
+                border-radius: 8px;
+
+                .input {
+                    outline: none;
+                    width: 100%;
+                    padding: 13px 15px !important;
+                    box-sizing: border-box;
+                }
+
+                .button {
+                    background-color: rgba(189, 189, 189, 0.647);
+                    width: 80px;
+                    cursor: pointer;
+
+                }
+            }
+
+            .buttonclose {
+                background-color: rgba(189, 189, 189, 0.647);
+                // width: 80px;
+                padding: 10px !important;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+}

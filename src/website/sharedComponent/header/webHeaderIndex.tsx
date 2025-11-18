@@ -13,6 +13,7 @@ import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import Cart_Drawer from './cartDrawer/cartDrawerIndex';
+import { useRouter } from 'next/navigation';
 
 
 interface DataType {
@@ -24,10 +25,11 @@ interface DataType {
 
 const WebsiteHeader = () => {
     const [openDrawer, setOpenDrawer] = useState(false);
-    const [openCartDrawer, setOpenCartDrawer] = useState(true);
+    const [openCartDrawer, setOpenCartDrawer] = useState(false);
     const [openPopup, setOpenPopup] = useState(false);
     const [SlideRotation, setSlideRotation] = useState<any>(null)
 
+    const router = useRouter();
     const handleAdd = () => {
         setOpenDrawer(true);
     };
@@ -56,6 +58,10 @@ const WebsiteHeader = () => {
             setSlideRotation(currentRotation);
         }
     };
+
+    const handelSearchRoute = () => {
+        router.push('/search');
+    }
 
     return (
         <div className={styles.header_div_main}>
@@ -91,7 +97,7 @@ const WebsiteHeader = () => {
                     <img src="https://elyscents.pk/cdn/shop/files/logo_size.png?v=1703577106&width=320" alt="" className={styles.logo_image} />
                 </div>
                 <div className={styles.action_div}>
-                    <button className={styles.icon_button}>
+                    <button className={styles.icon_button} onClick={handelSearchRoute}>
                         <SearchOutlinedIcon className={styles.icon} />
                     </button>
                     <button className={styles.icon_button}>

@@ -72,7 +72,7 @@ const Cart_Drawer = ({ Open, Close }: HeaderDrawerProps) => {
                     fakeCartData.length > 0 ?
                         (fakeCartData?.map((item: any, index: number) => {
                             return (
-                                <div className={styles.item_cart}>
+                                <div className={styles.item_cart} key={index}>
                                     <Link href="#" className={styles.image_div}>
                                         <img src={item?.image} alt="" className={styles.product_image} />
                                     </Link>
