@@ -11,7 +11,8 @@ import styles from './webFooterIndex.module.scss';
 import Collapse from '@mui/material/Collapse';
 import List from '@mui/material/List';
 import { Link } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { usePathname } from 'next/navigation';
 
 interface DataType {
     title: string,
@@ -40,8 +41,19 @@ const LinkData = [
     },
 ]
 const WebsiteFooter = () => {
-    const [open, setOpen] = React.useState(false);
-    const [openSignup, setOpenSignup] = React.useState(false);
+    const PathName = usePathname()
+    const [open, setOpen] = useState(false);
+    const [openSignup, setOpenSignup] = useState(false);
+    const [IsFooterShow, setFooterShow] = useState(true);
+
+    useEffect(() => {
+        if (PathName?.includes('checkout')) {
+            setFooterShow(false)
+        }
+        else {
+            setFooterShow(true)
+        }
+    }, [])
 
     const handleClick = () => {
         setOpen(!open);
@@ -50,7 +62,7 @@ const WebsiteFooter = () => {
         setOpenSignup(!openSignup);
     };
     return (
-        <div className={styles.footer_div_main}>
+        <div className={styles.footer_div_main} style={{ display: IsFooterShow ? 'flex' : 'none' }}>
             <div className={styles.footer_div_container}>
                 <div className={styles.social_link_div_main}>
                     <img src="https://elyscents.pk/cdn/shop/files/logo_size.png?v=1703577106&width=277" alt="" className={styles.logo_image} />

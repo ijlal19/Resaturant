@@ -6,14 +6,14 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import styles from './webHeaderIndex.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import HeaderDrawer from './headerDrawerIndex';
-import react, { useState } from 'react';
+import react, { useEffect, useState } from 'react';
 import 'swiper/swiper-bundle.css';
 import Data from './data';
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import Cart_Drawer from './cartDrawer/cartDrawerIndex';
-import { useRouter } from 'next/navigation';
+import { useParams, usePathname, useRouter } from 'next/navigation';
 
 
 interface DataType {
@@ -24,12 +24,23 @@ interface DataType {
 }
 
 const WebsiteHeader = () => {
+    const PathName = usePathname()
     const [openDrawer, setOpenDrawer] = useState(false);
     const [openCartDrawer, setOpenCartDrawer] = useState(false);
     const [openPopup, setOpenPopup] = useState(false);
+    const [IsHeaderShow, setHeaderShow] = useState(true);
     const [SlideRotation, setSlideRotation] = useState<any>(null)
-
     const router = useRouter();
+
+    useEffect(() => {
+        if (PathName?.includes('checkout')) {
+            setHeaderShow(false)
+        }
+        else {
+            setHeaderShow(true)
+        }
+    }, [])
+
     const handleAdd = () => {
         setOpenDrawer(true);
     };
@@ -64,7 +75,7 @@ const WebsiteHeader = () => {
     }
 
     return (
-        <div className={styles.header_div_main}>
+        <div className={styles.header_div_main} style={{ display: IsHeaderShow ? 'flex' : 'none' }}>
             <div className={styles.header_bar_div}>
                 <Swiper
                     modules={[Autoplay]}

@@ -1,0 +1,535 @@
+@import '../../../globalConfig.scss';
+
+.checkout_main_div {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+
+    .checkout_header_div {
+        width: 100%;
+        padding: 0px 10px !important;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid rgba(181, 180, 180, 0.764);
+
+        .checkout_header {
+            width: 100%;
+            max-width: 1050px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            padding: 5px 20px !important;
+            box-sizing: border-box;
+            justify-content: space-between;
+
+            .logo_image {
+                width: 150px;
+                margin-top: 15px;
+            }
+
+            .icon_button {
+                cursor: pointer;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .icon {
+                    color: black;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    .checkout_container_div {
+        width: 100%;
+        max-width: 1050px;
+        margin: auto;
+        padding: 0px 10px !important;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        box-sizing: border-box;
+
+        @media (max-width:768px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .contact_detail_div {
+            padding: 30px 30px 20px 30px !important;
+            box-sizing: border-box;
+
+            @media (max-width:768px) {
+                padding: 30px 10px 20px 10px !important;
+            }
+
+            .email_me_div {
+                padding: 10px 0px 20px 0px !important;
+                box-sizing: border-box;
+
+                .contact_heading {
+                    padding: 0px !important;
+                    margin: 0px !important;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    font-size: 20px;
+                    font-family: $font-bold;
+                    letter-spacing: 1px;
+
+                    .signin {
+                        font-size: 12px;
+                        color: black;
+                        font-family: $font-regular;
+
+                        text-decoration: underline;
+                    }
+                }
+
+                .email_input {
+                    width: 100%;
+                    margin-top: 10px !important;
+                    padding: 13px !important;
+                    box-sizing: border-box;
+                    border: 1px solid rgba(0, 0, 0, 0.267);
+                    font-size: 14px;
+                    border-radius: 10px;
+                }
+
+                .check_box {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    margin-top: 15px;
+                    column-gap: 7px;
+                    font-size: 14px;
+                    color: black;
+
+                    .checkbox_input {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+
+            .deliver_div {
+                padding: 10px 0px 20px 0px !important;
+                box-sizing: border-box;
+
+                .delivery_heading {
+                    padding: 0px !important;
+                    margin: 0px !important;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    font-size: 20px;
+                    font-family: $font-bold;
+                    letter-spacing: 1px;
+                }
+
+                .delivery_form {
+                    padding: 10px 0px !important;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 15px;
+                    box-sizing: border-box;
+
+                    .input2_div {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        justify-content: center;
+                        align-items: center;
+                        column-gap: 10px;
+
+                        .short_input {
+                            padding: 13px !important;
+                            display: flex;
+                            align-items: center;
+                            box-sizing: border-box;
+                            outline: none;
+                            border-radius: 10px;
+                            border: 1px solid #bcbababf;
+                            width: 100%;
+                            font-size: 14px;
+                        }
+
+                        @media (max-width:768px) {
+                            flex-direction: column;
+                            grid-template-columns: repeat(1, 1fr);
+                            row-gap: 15px;
+                        }
+                    }
+
+                    .long_input {
+                        padding: 13px !important;
+                        display: flex;
+                        align-items: center;
+                        box-sizing: border-box;
+                        outline: none;
+                        border-radius: 10px;
+                        font-size: 14px;
+                        border: 1px solid #bcbababf;
+                        width: 100%;
+                    }
+
+                    .check_box {
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        margin-top: 15px;
+                        column-gap: 7px;
+                        font-size: 14px;
+                        color: black;
+
+                        .checkbox_input {
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+
+                    .complete_button {
+                        padding: 11px !important;
+                        box-sizing: border-box;
+                        outline: none;
+                        border-radius: 10px;
+                        font-size: 16px;
+                        border: 1px solid $main-color;
+                        width: 100%;
+                        text-align: center;
+                        font-weight: bolder;
+                        background-color: $main-color;
+                        color: $text-color;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+
+        .order_detail_div {
+            display: flex;
+            flex-direction: column;
+            border-left: 1px solid rgb(213, 212, 212);
+            padding: 30px !important;
+            box-sizing: border-box;
+
+            @media (max-width:768px) {
+                display: none;
+                border-left: none;
+                padding: 30px 10px 20px 10px !important;
+            }
+
+            .product_div {
+                height: 230px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 0px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                flex-wrap: nowrap;
+                scroll-behavior: smooth;
+                padding: 0px 10px;
+
+                @media (max-width:768px) {
+                    padding: 0px !important;
+                    box-sizing: border-box;
+                }
+
+                .single_product_div {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: left;
+                    column-gap: 15px;
+                    border-bottom: 1px solid rgba(199, 198, 198, 0.781);
+                    padding: 10px 0px 10px 0px !important;
+
+                    .logo_image {
+                        width: 60px;
+                        border-radius: 5px;
+                    }
+
+                    .price_div {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        width: 100%;
+                        padding: 0px 30px 0px 1px !important;
+                        box-sizing: border-box;
+
+                        .title {
+                            font-size: 16px;
+                            font-family: $font-regular;
+                            display: flex;
+                            flex-direction: column;
+
+                            .qt {
+                                font-size: 12px;
+                                color: grey;
+                            }
+                        }
+
+                        .price {
+                            font-size: 14px;
+                            font-family: $font-regular;
+                        }
+                    }
+                }
+
+            }
+
+            .product_div::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            .product_div::-webkit-scrollbar-thumb {
+                background: $main_color;
+                border-radius: 4px;
+            }
+
+            .coupon_div {
+                width: 100%;
+                display: flex;
+                justify-content: left;
+                align-items: flex-start;
+                column-gap: 10px;
+                padding: 20px 0px 0px 0px !important;
+                box-sizing: border-box;
+
+                .code_input {
+                    padding: 13px;
+                    border-radius: 10px;
+                    border: 1px solid #d7d7d7c8;
+                    width: 100%;
+                }
+
+                .apply_buttton {
+                    padding: 13px 0px !important;
+                    box-sizing: border-box;
+                    outline: none;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    width: 100px;
+                    border: 1px solid rgba(80, 79, 79, 0.788);
+                    color: grey;
+                    text-align: center;
+                    cursor: pointer;
+                    font-weight: bolder;
+                    background-color: whitesmoke;
+                }
+            }
+
+            .subtotal_div {
+                display: flex;
+                padding: 25px 0px !important;
+                flex-direction: column;
+                box-sizing: border-box;
+
+                .total_items {
+                    display: flex;
+                    font-size: 14px;
+                    color: black;
+                    padding: 5px 0px !important;
+                    box-sizing: border-box;
+                    justify-content: space-between;
+                    margin: 0px !important;
+                }
+
+                .free_shipin_heading {
+                    color: grey;
+                    font-size: 12px;
+                    padding: 0px !important;
+                    margin: 0px !important;
+                }
+
+                .total_price_tag {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 0px !important;
+                    font-size: 24px;
+                    font-family: $font-regular2;
+
+                    .amount_digit {
+                        font-size: 16px;
+                        display: flex;
+                        align-items: center;
+                        column-gap: 5px;
+                        font-family: $font-regular2;
+                    }
+                }
+            }
+        }
+
+        .lis_signup {
+            display: none;
+
+            @media (max-width:768px) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .order_detail_div_mobile {
+                display: flex;
+                border-left: 1px solid rgb(213, 212, 212);
+                padding: 30px !important;
+                box-sizing: border-box;
+                flex-direction: column;
+                @media (max-width:768px) {
+                    border-left: none;
+                    padding: 30px 10px 20px 10px !important;
+                }
+
+                .product_div {
+                    height: 230px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 0px;
+                    overflow-y: auto;
+                    overflow-x: hidden;
+                    flex-wrap: nowrap;
+                    scroll-behavior: smooth;
+                    padding: 0px 10px;
+
+                    @media (max-width:768px) {
+                        padding: 0px !important;
+                        box-sizing: border-box;
+                    }
+
+                    .single_product_div {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: left;
+                        column-gap: 15px;
+                        border-bottom: 1px solid rgba(199, 198, 198, 0.781);
+                        padding: 10px 0px 10px 0px !important;
+
+                        .logo_image {
+                            width: 60px;
+                            border-radius: 5px;
+                        }
+
+                        .price_div {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            width: 100%;
+                            padding: 0px 30px 0px 1px !important;
+                            box-sizing: border-box;
+
+                            .title {
+                                font-size: 16px;
+                                font-family: $font-regular;
+                                display: flex;
+                                flex-direction: column;
+
+                                .qt {
+                                    font-size: 12px;
+                                    color: grey;
+                                }
+                            }
+
+                            .price {
+                                font-size: 14px;
+                                font-family: $font-regular;
+                            }
+                        }
+                    }
+
+                }
+
+                .product_div::-webkit-scrollbar {
+                    width: 5px;
+                }
+
+                .product_div::-webkit-scrollbar-thumb {
+                    background: $main_color;
+                    border-radius: 4px;
+                }
+
+                .coupon_div {
+                    width: 100%;
+                    display: flex;
+                    justify-content: left;
+                    align-items: flex-start;
+                    column-gap: 10px;
+                    padding: 20px 0px 0px 0px !important;
+                    box-sizing: border-box;
+
+                    .code_input {
+                        padding: 13px;
+                        border-radius: 10px;
+                        border: 1px solid #d7d7d7c8;
+                        width: 100%;
+                    }
+
+                    .apply_buttton {
+                        padding: 13px 0px !important;
+                        box-sizing: border-box;
+                        outline: none;
+                        border-radius: 10px;
+                        font-size: 16px;
+                        width: 100px;
+                        border: 1px solid rgba(80, 79, 79, 0.788);
+                        color: grey;
+                        text-align: center;
+                        cursor: pointer;
+                        font-weight: bolder;
+                        background-color: whitesmoke;
+                    }
+                }
+
+                .subtotal_div {
+                    display: flex;
+                    padding: 25px 0px !important;
+                    flex-direction: column;
+                    box-sizing: border-box;
+
+                    .total_items {
+                        display: flex;
+                        font-size: 14px;
+                        color: black;
+                        padding: 5px 0px !important;
+                        box-sizing: border-box;
+                        justify-content: space-between;
+                        margin: 0px !important;
+                    }
+
+                    .free_shipin_heading {
+                        color: grey;
+                        font-size: 12px;
+                        padding: 0px !important;
+                        margin: 0px !important;
+                    }
+
+                    .total_price_tag {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 10px 0px !important;
+                        font-size: 24px;
+                        font-family: $font-regular2;
+
+                        .amount_digit {
+                            font-size: 16px;
+                            display: flex;
+                            align-items: center;
+                            column-gap: 5px;
+                            font-family: $font-regular2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
