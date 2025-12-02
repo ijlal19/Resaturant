@@ -50,6 +50,9 @@ const WebsiteFooter = () => {
         if (PathName?.includes('checkout')) {
             setFooterShow(false)
         }
+        else if (PathName?.includes('panel')) {
+            setFooterShow(false)
+        }
         else {
             setFooterShow(true)
         }

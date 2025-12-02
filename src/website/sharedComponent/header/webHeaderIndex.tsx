@@ -36,6 +36,9 @@ const WebsiteHeader = () => {
         if (PathName?.includes('checkout')) {
             setHeaderShow(false)
         }
+        else if (PathName?.includes('panel')) {
+            setHeaderShow(false)
+        }
         else {
             setHeaderShow(true)
         }
