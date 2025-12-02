@@ -20,7 +20,7 @@ const TrackOrderPageIndex = () => {
     const HandleONchange = (e: any, from: string) => { 
         if (from === "OrderNumber") {
             setUserOrderNumber(e.target.value);
-        }
+        } 
         else if (from === "MobileNumber") {
             setUserMobileNumber(e.target.value);
         }
