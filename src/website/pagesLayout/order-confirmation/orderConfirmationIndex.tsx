@@ -12,7 +12,7 @@ const Order_Confirmation = () => {
             {
                 userOrder?.map((e: any, i: any) => {
                     return (
-                        <div className={styles.order_div_container}>
+                        <div className={styles.order_div_container} key={i}>
                             <div className={styles.customer_info}>
                                 <div className={styles.info_div}>
                                     <p className={styles.heading}>Order Summary</p>
@@ -42,7 +42,7 @@ const Order_Confirmation = () => {
                                 {
                                     e?.order?.products?.map((item: any, i: any) => {
                                         return (
-                                            <div className={styles.product_div}>
+                                            <div className={styles.product_div} key={i} >
                                                 <img src={item?.image} alt={item?.name} className={styles.image} />
                                                 <div className={styles.product_info}>
                                                     <p className={styles.name}>{item?.name}</p>
