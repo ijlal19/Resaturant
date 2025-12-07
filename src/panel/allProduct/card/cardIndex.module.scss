@@ -1,0 +1,79 @@
+@import '../../../globalConfig.scss';
+
+.cart_main_div {
+    width: 100%;
+    // max-width: 450px;
+    border-radius: 10px;
+    border: 1px solid #76757596;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+
+
+    .product_image {
+        width: 250px;
+    }
+
+    .product_detail {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        .detail {
+            display: flex;
+            flex-direction: column;
+            padding: 10px !important;
+            box-sizing: border-box;
+
+            .title {
+                font-size: 16px;
+                // font-weight: bold;
+                font-family: $font-bold;
+                color: #333333;
+
+                .field_name {
+                    font-size: 14px;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .action_btn {
+            width: 100%;
+            padding: 5px 10px 10px 10px !important;
+            display: flex;
+            justify-content: left;
+            column-gap: 15px;
+
+            .edit_btn {
+                padding: 5px 10px;
+                color: white;
+                cursor: pointer;
+                background-color: #1976d2;
+                border-radius: 5px;
+                font-size: 14px;
+                font-family: $font-bold;
+                letter-spacing: .5px;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+
+            .del_btn {
+                padding: 5px 10px;
+                color: white;
+                cursor: pointer;
+                background-color: rgb(223, 16, 16);
+                border-radius: 5px;
+                font-size: 14px;
+                font-family: $font-bold;
+                letter-spacing: .5px;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}

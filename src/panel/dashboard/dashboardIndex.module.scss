@@ -1,10 +1,18 @@
 .dashboard_main {
     width: 100%;
     padding: 20px !important;
+    min-height: 100vh;
+    height: auto;
     box-sizing: border-box;
+    background-color: whitesmoke;
 
     .dashboard_container {
         display: flex;
+        width: 100%;
+        max-width: 1100px;
+        margin: auto;
+        padding: 0px 10px !important;
+        box-sizing: border-box;
         flex-direction: column;
 
         .heading {
@@ -13,24 +21,35 @@
             text-align: left;
             font-weight: bold;
             letter-spacing: 1px;
+            color: #333333;
             padding: 10px 0px 40px 0px !important;
             box-sizing: border-box;
         }
 
         .table_div_main {
-
+            width: 100%;
+            box-shadow: 0px 0px 10px rgb(152, 151, 151);
+            // border: 1px solid #000;
+            background-color: white;
+            padding: 10px !important;
+            box-sizing: border-box;
+            border-radius: 10px;
+            overflow: hidden;
             // border: 1px solid #000;
             .table_div {
                 // border: 1px solid #000;
                 width: 100%;
-
+                
                 .thead {
                     // border: 1px solid #000;
 
                     .th {
-                        border: 1px solid #000;
-                        padding: 5px 10px !important;
-                        font-size: 18px;
+                        
+                        border: 1px solid #4544449b;
+                        padding: 10px 10px !important;
+                        font-size: 16px;
+                        color: #333333;
+                        text-align: left;
                         text-transform: uppercase;
                     }
                 }
@@ -38,10 +57,13 @@
                 .tbody {
                     .th {
                         padding: 15px 10px !important;
-                        font-size: 16px;
+                        font-size: 14px;
                         font-weight: none;
+                        text-align: left;
+                        letter-spacing: 1px;
+                        color: #333333;
                         font-family: sans-serif;
-                        border: 1px solid #000;
+                        border: 1px solid #787575b8;
                     }
                 }
             }
